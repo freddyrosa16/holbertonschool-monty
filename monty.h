@@ -14,4 +14,11 @@ typedef struck instruction_s
   void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+typedef struct arg_s
+{
+  FILE *stream;
+  char *line;
+} arg_t;
+extern arg_t *arguments;
+
 #endif
